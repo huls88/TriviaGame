@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Trivia Game</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   </head>
+   <body>
+      <div id="row">
+         <div class="col-sm-8">
+            <div id="container">
+               <div class="jumbotron">
+                  <h1>Trivia Game</h1>
+                  <p id="timerId">
+               </div>
+               <div id="container">
+                  <div id="wrapper">
+                     <h2 id="howTo">How to Play!</h2>
+                     <p id="explanation">There are 5 really hard questions that we don't expect you to know. Please try your best to answer them. : )</p>
+                     <h2>
+                        <button type="button" id="start-button">Start</button>
+                     </h2>
+                     <div id="questionBank"></div>
+                     <!-- question 1 -->
+                     <p class="question1">1. Who wrote the song "Tennesse Whiskey"?</p>
+                     <div id="radioButtonContainerId">
+                     <ul class="answers">
+                        <input type="radio" name="rightAnswer" value="a" id="answer1">Chris Stapleton<br/>
+                        <input type="radio" name="wrongAnswer" value="b">Garth Brooks<br/>
+                        <input type="radio" name="wrongAnswer" value="c">Taylor Ray Holbrook<br/>
+                        <input type="radio" name="wrongAnswer" value="d">50 cent<br/>
+                     </ul>
+                     </div>
+                     <!-- question 2 -->
+                     <p class="question2">2. Who is the author of "Game of Thrones"?</p>
+                     <ul class="answers">
+                        <input type="radio" name="secondQ" value="a">George Lopez<br/>
+                        <input type="radio" name="secondQ" value="b">George W. Bush<br/>
+                        <input type="radio" name="secondQ" value="c">George R. R. Martin<br/>
+                        <input type="radio" name="secondQ" value="d">George Washington<br/>
+                     </ul>
+                     <!-- question 3 -->
+                     <p class="question3">3. Who owns Youtube?</p>
+                     <ul class="answers">
+                        <input type="radio" name="thirdQ" value="a">Donald Trump<br/>
+                        <input type="radio" name="thirdQ" value="b">Yahoo<br/>
+                        <input type="radio" name="thirdQ" value="c">Google<br/>
+                        <input type="radio" name="thirdQ" value="d">AOL<br/>
+                     </ul>
+                     <!-- question 4 -->
+                     <p class="question4">4. Who rules North Korea?</p>
+                     <ul id="answers">
+                        <input type="radio" name="fourthQ" value="a">Putin<br/>
+                        <input type="radio" name="fourthQ" value="b">Voldermort<br/>
+                        <input type="radio" name="fourthQ" value="c">Kim Jong un our fearless leader!!<br/>
+                        <input type="radio" name="fourthQ" value="d">USA<br/>
+                     </ul>
+                     <!-- question 5 -->
+                     <p class="question5">5. In poker, what is the missing card in this straight: 4,5,x,7,8?</p>
+                     <ul class="answers">
+                        <input type="radio" name="fifthQ" value="a">2<br/>
+                        <input type="radio" name="fifthQ" value="b">9<br/>
+                        <input type="radio" name="fifthQ" value="c">3<br/>
+                        <input type="radio" name="fifthQ" value="d">6<br/>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         		<div class="row">
+			<div class="col-md-12 col-md-offset-1">
+				<p id="correctAnswers">Correct Answers: </p>
+				<p id="wrongAnswers">Wrong Answer: </p>
+			</div>
+		</div>
+      </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/javascript/app.js"></script>
+   </body>
+</html>
